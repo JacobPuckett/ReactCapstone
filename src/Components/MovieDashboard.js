@@ -3,14 +3,13 @@ import MovieCard from './MovieCard'
 
 
 const MovieDashboard = (props) => {
-  const { movieData, movieComedy } = props
+  const { movieData, movieComedy, movieRomance, movieHorror } = props
 
   let displayMovies = movieData.map((m,i) => {
     return <MovieCard movie={m}/>
   })
-  // let displayComedy = movieComedy.map((m,i) => {
-  //   return <MovieCard comedy={m}/>
-  // })
+ 
+
 
 
 

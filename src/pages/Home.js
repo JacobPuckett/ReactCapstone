@@ -35,6 +35,7 @@ function Home() {
       axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&with_genres=27`)
     .then ((res) => {
       setMovieHorror(res.data.results)
+      
     })
     }
   
@@ -45,7 +46,7 @@ function Home() {
   const getData = () => {
     axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&with_genres=28`)
     .then ((res) => {
-      // console.log(res.data.results)
+      console.log(res.data.results)
       // console.log(res.data.results[0].original_title)
       // console.log(res.data.results[0].poster_path)
       setMovieData(res.data.results)
@@ -59,6 +60,9 @@ function Home() {
   return (
     <div>
     <main>
+      <div className='most-popular'>
+        
+      </div>
       <h2>Action</h2>
         <MovieDashboard 
         movieData={movieData}
