@@ -5,7 +5,7 @@ import { Outlet, Link } from 'react-router-dom'
 function Header() {
  
   return (
-    <div>
+    <div className='head'>
     <nav className="nav">
       <h1 className='title'>MovieList</h1>
       <ul>

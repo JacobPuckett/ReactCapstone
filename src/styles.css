@@ -4,10 +4,12 @@
 
 
 .title {
-    font-size: 2rem;
-    color: red;
-    
+    font-size: 3rem;
+    color: rgb(247, 56, 56);
+    font-family: Foldit;
 }
+
+
 
 nav ul {
     padding: 0;
